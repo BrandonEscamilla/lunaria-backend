@@ -17,9 +17,9 @@ const Mutation = new GraphQLObjectType({
     addEvents,
     updateEvents,
     removeEvents,
-    add3DModel,
-    update3DModel,
-    remove3DModel
+    //add3DModel,
+    //update3DModel,
+    //remove3DModel
   }
 })
 

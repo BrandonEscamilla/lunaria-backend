@@ -6,6 +6,7 @@ module.exports = {
   type: new GraphQLList(eventGraphQLType),
   args: {},
   resolve() {
+    console.log('Enter to get All eventss!')
     return Event.find({})
   }
 }

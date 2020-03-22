@@ -7,7 +7,8 @@ module.exports = {
   args: {
     id: {type: GraphQLString},
     name: { type: GraphQLString },
-    date: { type: GraphQLString },
+    startDate: { type: GraphQLString },
+    endDate: { type: GraphQLString },
     description: { type: GraphQLString },
     speaker: { type: GraphQLString },
   },
@@ -15,7 +16,8 @@ module.exports = {
     return Event.findById(args.id)
       .then(event => {
         event.name = args.name
-        event.date = args.date,
+        event.startDate = args.startDate,
+        event.endDate = args.endDate
         event.description = args.description,
         event.speaker = args.speaker
 

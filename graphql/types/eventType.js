@@ -7,7 +7,8 @@ const EventsType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLString },
     name: { type: GraphQLString }, 
-    date: { type: GraphQLString },
+    startDate: { type: GraphQLString },
+    endDate: { type: GraphQLString },
     description: { type: GraphQLString },
     speaker: {type: GraphQLString}
   })
