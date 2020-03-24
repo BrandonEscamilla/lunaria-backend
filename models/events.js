@@ -6,7 +6,8 @@ const EventSchema = new Schema({
   startDate: Date,
   endDate: Date,
   description: String,
-  speaker: String//mongoose.Schema.Types.ObjectId,
+  speaker: String,//mongoose.Schema.Types.ObjectId,
+  image: String
 });
 
 module.exports = mongoose.model('Events', EventSchema);

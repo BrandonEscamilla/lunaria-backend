@@ -59,13 +59,15 @@ cron.schedule("* * * * *", () => {
             let ev = event.description.split(',')
             let speaker = ev[1].split(':')[1].trim();
             let description = ev[2].split(':')[1].trim();
-  
+            let image = ev[3].split(':')[1].trim();
+            
             const newEvent = new Events({
               name: event.summary,
               startDate: event.start.dateTime,
               endDate: event.end.dateTime,
               description: description,
               speaker: speaker,
+              image: image
             })
             
             return newEvent.save();

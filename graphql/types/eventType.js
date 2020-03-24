@@ -10,7 +10,8 @@ const EventsType = new GraphQLObjectType({
     startDate: { type: GraphQLString },
     endDate: { type: GraphQLString },
     description: { type: GraphQLString },
-    speaker: {type: GraphQLString}
+    speaker: { type: GraphQLString },
+    image: { type: GraphQLString }
   })
 });
 
