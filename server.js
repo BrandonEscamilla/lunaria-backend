@@ -60,6 +60,7 @@ cron.schedule("* * * * *", () => {
             let speaker = ev[1].split(':')[1].trim();
             let description = ev[2].split(':')[1].trim();
             let image = ev[3].split(':')[1].trim();
+            
             console.log(image)
             console.log(ev)
             const newEvent = new Events({
